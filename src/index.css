@@ -11,3 +11,57 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.content {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 1rem;
+  overflow-y: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  margin: 20px;
+  border-radius: 20px;
+  border: 1px blue solid;
+  background-color: #aac1ffaa;
+  overflow: hidden;
+}
+.container > .container {
+  scroll-snap-align: start;
+}
+.name {
+  text-align: center;
+}
+.container img{
+  width: 80px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 5px;
+  border: 1px #698ff7aa solid;
+
+}
+.episode {
+  width: 250px;
+}
+/* .status {
+
+}
+.species {
+
+}
+.gender {
+
+} */
+
+.checkbox-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
